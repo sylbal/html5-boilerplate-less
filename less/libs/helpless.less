@@ -283,8 +283,8 @@
     -webkit-opacity: @value;
     opacity: @value;
     filter: ~'alpha(opacity=(@{value}*100))'; 
-    filter: ~'progid:DXImageTransform.Microsoft.Alpha(opacity=({@value}*100))'; 
-    -ms-filter: ~'"progid:DXImageTransform.Microsoft.Alpha(opacity=({@value}*100))"'; 
+    filter: ~'progid:DXImageTransform.Microsoft.Alpha(opacity=(@{value}*100))'; 
+    -ms-filter: ~'"progid:DXImageTransform.Microsoft.Alpha(opacity=(@{value}*100))"'; 
   }
 
   /************************************
