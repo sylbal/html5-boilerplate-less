@@ -30,7 +30,7 @@ body {
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection declarations have to be separate.
+ * These selection rule sets have to be separate.
  * Customize the background color to match your design.
  */
 
@@ -134,7 +134,7 @@ textarea {
     content: "";
     display: block;
     width: 0;
-    height: 100%;
+    height: 150%;
 }
 
 /*
@@ -217,7 +217,7 @@ textarea {
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
+   These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
@@ -225,11 +225,10 @@ textarea {
     /* Style adjustments for viewports that meet the condition */
 }
 
-/*
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
-Second part of the , not supported by less yet.
-*/
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 
