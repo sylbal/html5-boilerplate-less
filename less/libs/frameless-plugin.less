@@ -25,8 +25,8 @@
     @font-size: 16; 		// Your base font-size in pixels
     @em: @font-size*1em;	// Shorthand for outputting ems, e.g. "12/@em"
     
-    @column: 48;	// The column-width of your grid in pixels
-    @gutter: 24;	// The gutter-width of your grid in pixels
+    @column: 60;	// The column-width of your grid in pixels
+    @gutter: 20;	// The gutter-width of your grid in pixels
     
     
     //
@@ -64,5 +64,13 @@
     //
     .margin-left () {
         margin-left: @gutter/@em;
+    }
+    
+    //
+    // Prefix function to add some "blank" columns before the content column
+    // The prefix includes all the necessary gutters
+    //
+    .prefix (@cols:1) {
+        padding-left: (@cols * (@column + @gutter)) / @em;
     }
 }
