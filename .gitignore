@@ -4,3 +4,4 @@
 .settings/
 archive
 node_modules
+.DS_Store
